@@ -8,20 +8,41 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
     tools:context="com.example.lubaka.application.MainActivity">
 
-    <TextView
+    <Button
+        android:text="Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:id="@+id/BtnLogin"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="141dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#3cc1fa" />
 
     <Button
-        android:text="Button"
+        android:text="Sign UP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginTop="123dp"
-        android:id="@+id/button" />
+        android:layout_marginStart="57dp"
+        android:id="@+id/BtnSignUp"
+        android:layout_alignBaseline="@+id/BtnLogin"
+        android:layout_alignBottom="@+id/BtnLogin"
+        android:layout_toEndOf="@+id/BtnLogin"
+        android:backgroundTint="#3cc1fa" />
+
+    <TextView
+        android:text="MY ONLINE CARD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="36sp"
+        android:padding="70dp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/BtnLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
 </RelativeLayout>

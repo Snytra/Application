@@ -10,19 +10,26 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     Button login;
+    Button register;
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        login = (Button) findViewById(R.id.button);
+        login = (Button) findViewById(R.id.BtnLogin);
         login.setOnClickListener(this);
+        register = (Button) findViewById(R.id.BtnSignUp);
+        register.setOnClickListener(this);
 
     }
 
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.button){
+        if(v.getId() == R.id.BtnLogin){
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.BtnSignUp){
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
         }
