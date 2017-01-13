@@ -20,6 +20,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         register = (Button) findViewById(R.id.BtnSignUp);
         register.setOnClickListener(this);
 
+
     }
 
 
